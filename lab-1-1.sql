@@ -3,7 +3,7 @@
 -- and team name of every baseball team that has ever played.
 
 -- Expected result: 2955 rows, ending with
---
+SELECT year, name FROM teams ORDER BY year LIMIT 10;
 -- | 2020 | Seattle Mariners                  |
 -- | 2020 | San Francisco Giants              |
 -- | 2020 | St. Louis Cardinals               |

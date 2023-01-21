@@ -2,7 +2,12 @@
 -- modern era (from 1960-present), listed by winningest teams first?
 
 -- Expected result: 61 rows, starting with
---
+SELECT *, MAX(wins), COUNT (*)
+FROM teams
+WHERE year >= 1960
+GROUP By year
+ORDER BY MAX(wins) DESC
+LIMIT 10;
 -- +------+-------------------------------+-----------+
 -- | 2001 | Seattle Mariners              | 116       |
 -- | 1998 | New York Yankees              | 114       |
